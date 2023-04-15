@@ -54,7 +54,7 @@ const router = createBrowserRouter([
         path: "Contact/Github",
         loader: () => {window.location.replace("https://github.com/PdeKingsley");return "https://github.com/PdeKingsley";},
     },
-],{basename: process.env.Path.toString(),})
+],{basename: process.env.PUBLIC,})
 
 root.render(
   <React.StrictMode>
