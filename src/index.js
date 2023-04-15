@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         element: <Tag />,
     },
     {
-        path: "tag/:tag",
+        path:  "tag/:tag",
         element: <Tag />,
     },
     {
@@ -54,6 +54,7 @@ const router = createBrowserRouter([
     },
 ],{basename: process.env.PUBLIC_URL,})
 
+console.log(process.env.PUBLIC_URL);
 root.render(
   <React.StrictMode>
       <RouterProvider router={router} />

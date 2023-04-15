@@ -8,7 +8,7 @@ import {PUBLIC_URL} from "../../data/global";
 
 function Link({title,icon,isDictionary = false}){
     const homeColor = title === "Home" ? {color:"#3eaf7c"} : {};
-    let path = PUBLIC_URL +  "/" + title.toLowerCase();
+    let path = PUBLIC_URL + "/" + title.toLowerCase();
     return (
         <div className="nav-item">
             <div className="dropdown-wrapper">
