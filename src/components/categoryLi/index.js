@@ -1,8 +1,9 @@
 import React from "react";
 import "./index.css"
+import {PUBLIC_URL} from "../../data/global";
 
 function CategoryLi({name,num}){
-    let url = "/category/" + name;
+    let url = PUBLIC_URL + "/category/" + name;
     return (
         <li className="categories-item">
             <a href={url}>

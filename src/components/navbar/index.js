@@ -13,7 +13,6 @@ import {
 import Link from "../link";
 import "./index.css"
 import {blogListProfiles} from "../../data/data";
-import Blog from "../../views/blog";
 
 function Navbar(){
     const [searchInput,setSearchInput] = useState("");

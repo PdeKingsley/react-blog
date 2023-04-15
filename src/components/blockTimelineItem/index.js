@@ -1,8 +1,9 @@
 import React from "react";
 import "./index.css";
+import {PUBLIC_URL} from "../../data/global";
 
 function BlockTimelineItem({date,title}){
-    let url = "/blogs/" + title;
+    let url = PUBLIC_URL + "/blogs/" + title;
     return (
         <div className="block-timeline-item">
             <a href={url}>

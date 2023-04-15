@@ -1,8 +1,9 @@
 import React from "react";
 import "./index.css"
+import {PUBLIC_URL} from "../../data/global";
 
 function CategoryItem({categoryName,postNum}){
-    let url = "/category/" + categoryName;
+    let url = PUBLIC_URL + "/category/" + categoryName;
 
     return (
         <li key={categoryName} className="category-item">
