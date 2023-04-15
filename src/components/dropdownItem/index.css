@@ -1,0 +1,19 @@
+.dropdown-item{
+    font-size: .9rem;
+    cursor: pointer;
+    white-space: nowrap;
+    color: inherit;
+    line-height: 1.7rem;
+}
+
+.dropdown-item-link{
+    font-size: .9rem;
+    white-space: nowrap;
+    color: var(--text-color);
+    display: block;
+    position: relative;
+    border-bottom: none;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 0 1.5rem 0 1.25rem;
+}

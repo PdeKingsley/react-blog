@@ -1,0 +1,4 @@
+export const mockMap = {
+    "Category": ["Java","git","随笔","theory","leetcode","技巧","中间件"],
+    "Contact": ["Github"],
+};

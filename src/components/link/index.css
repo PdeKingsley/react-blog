@@ -1,0 +1,94 @@
+.nav-item{
+    color: var(--text-color);
+    white-space: nowrap;
+    font-size: .9rem;
+    position: relative;
+    display: inline-block;
+    margin-left: 1.5rem;
+    line-height: 2rem;
+}
+
+.dropdown-wrapper{
+    color: var(--text-color);
+    white-space: nowrap;
+    font-size: .9rem;
+    line-height: 2rem;
+    cursor: pointer;
+    height: 1.8rem;
+    transition: all .8s;
+}
+
+.nav-dropdown{
+    color: var(--text-color);
+    font-size: .9rem;
+    cursor: pointer;
+    line-height: 2.2;
+    height: auto!important;
+    box-sizing: border-box;
+    max-height: calc(100vh - 2.7rem);
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--background-color);
+    padding: .6rem 0;
+    box-shadow: var(--box-shadow);
+    text-align: left;
+    border-radius: .25rem;
+    white-space: nowrap;
+    margin: 0;
+    display: none;
+}
+
+.link{
+    white-space: nowrap;
+    font-size: .9rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    display: block;
+}
+
+.link-icon{
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.4rem;
+    font-style: normal;
+    font-size: 13px;
+    color: var(--text-color-sub);
+    margin-right: 4px;
+}
+
+.arrow-right{
+    white-space: nowrap;
+    font-size: .9rem;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: var(--text-color);
+    width: 0;
+    height: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-left: .4rem;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid var(--text-color-sub);
+    border-bottom: 0;
+}
+
+.arrow-right path{
+    display: none;
+}
+
+.dropdown-wrapper:hover .link{
+    color: #3eaf7c;
+}
+
+.dropdown-wrapper:hover .nav-dropdown{
+    display: block;
+}
