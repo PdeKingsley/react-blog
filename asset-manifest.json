@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/PdeKingsley.github.io/static/css/main.57572db8.css",
+    "main.js": "/PdeKingsley.github.io/static/js/main.322b45d9.js",
+    "static/js/787.d654f185.chunk.js": "/PdeKingsley.github.io/static/js/787.d654f185.chunk.js",
+    "static/media/bg.svg": "/PdeKingsley.github.io/static/media/bg.07c55725af82322d6429.svg",
+    "static/media/logo.png": "/PdeKingsley.github.io/static/media/logo.098340c311b71b853a9e.png",
+    "static/media/Pixel_Me.png": "/PdeKingsley.github.io/static/media/Pixel_Me.e951b46f529de11d210a.png",
+    "index.html": "/PdeKingsley.github.io/index.html",
+    "main.57572db8.css.map": "/PdeKingsley.github.io/static/css/main.57572db8.css.map",
+    "main.322b45d9.js.map": "/PdeKingsley.github.io/static/js/main.322b45d9.js.map",
+    "787.d654f185.chunk.js.map": "/PdeKingsley.github.io/static/js/787.d654f185.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57572db8.css",
+    "static/js/main.322b45d9.js"
+  ]
+}
