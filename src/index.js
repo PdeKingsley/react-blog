@@ -14,45 +14,52 @@ import Blog from "./views/blog";
 import Category from "./views/category";
 import Tag from "./views/tag";
 import {createStaticRouter, StaticRouterProvider} from "react-router-dom/server";
+import * as path from "path";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
     {
-        path: "/",
-        element: <App />,
+        path: "react-blog",
         errorElement: <ErrorPage />,
-    },
-    {
-        path: "/home",
-        element: <App />,
-    },
-    {
-        path: "category",
-        element: <Category />,
-    },
-    {
-        path: "category/:category",
-        element: <Category />,
-    },
-    {
-        path: "tag",
-        element: <Tag />,
-    },
-    {
-        path: "tag/:tag",
-        element: <Tag />,
-    },
-    {
-        path: "timeline",
-        element: <Timeline />,
-    },
-    {
-        path: "blogs/:title",
-        element: <Blog />,
-    },
-    {
-        path: "Contact/Github",
-        loader: () => {window.location.replace("https://github.com/PdeKingsley");return "https://github.com/PdeKingsley";},
+        children: [
+            {
+                path: "/",
+                element: <App />,
+                errorElement: <ErrorPage />,
+            },
+            {
+                path: "/home",
+                element: <App />,
+            },
+            {
+                path: "category",
+                element: <Category />,
+            },
+            {
+                path: "category/:category",
+                element: <Category />,
+            },
+            {
+                path: "tag",
+                element: <Tag />,
+            },
+            {
+                path: "tag/:tag",
+                element: <Tag />,
+            },
+            {
+                path: "timeline",
+                element: <Timeline />,
+            },
+            {
+                path: "blogs/:title",
+                element: <Blog />,
+            },
+            {
+                path: "Contact/Github",
+                loader: () => {window.location.replace("https://github.com/PdeKingsley");return "https://github.com/PdeKingsley";},
+            },
+        ],
     },
 ],{basename: process.env.PUBLIC_URL,})
 
