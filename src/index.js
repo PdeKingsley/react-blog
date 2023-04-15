@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
+    BrowserRouter,
     createBrowserRouter, Route,
     RouterProvider,
 } from "react-router-dom";
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
         path: "Contact/Github",
         loader: () => {window.location.replace("https://github.com/PdeKingsley");return "https://github.com/PdeKingsley";},
     },
-],{basename: process.env.PUBLIC_URL})
+],{basename: process.env.Path.toString(),})
 
 root.render(
   <React.StrictMode>
