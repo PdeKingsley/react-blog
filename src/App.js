@@ -6,7 +6,7 @@ import TagItem from "./components/tagItem";
 import BlogItem from "./components/blogItem";
 import Navbar from "./components/navbar";
 import Me from "./assets/images/Pixel_Me.png";
-import { blogListProfiles } from "./data/data";
+import {blogListProfiles, categoriesMap, tagsAll} from "./data/data";
 
 import {
     faTableCellsLarge, faTag, faHeartbeat, faUsers,faCopyright,
@@ -16,16 +16,14 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const banner = "世界线收束";
 const motto = "experience the world, enjoy the life"
-let numObj = [{num: 8, classification: "Articles"}, {num: 13, classification: "Tags"}];
-let categoryObj = Array.from([{categoryName: "Java", postNum: 2}, {
-    categoryName: "git",
-    postNum: 1
-}, {categoryName: "随笔", postNum: 1}, {categoryName: "theory", postNum: 2}, {
-    categoryName: "leetcode",
-    postNum: 2
-}, {categoryName: "技巧", postNum: 1}, {categoryName: "中间件", postNum: 4},]);
-let tagsObj = ["All", "spring", "non-blocking I/O", "reactive", "functional programming", "git", "essay", "编程风格", "lambda", "Java", "byte code", "leetcode", "rabbitmq", "redis", "消息队列"];
-
+const articleNum = blogListProfiles.length,tagNum = tagsAll.length;
+let numObj = [{num: articleNum, classification: "Articles"}, {num: tagNum, classification: "Tags"}];
+//主页个人info categories list
+let categoryObj = categoriesMap.
+        map(obj => {return {categoryName: obj.category,postNum: obj.payload.length}}).
+        filter((item,index) => index < 7);
+//主页个人info tags list
+let tagsObj = tagsAll.filter((item,index) => index < 15);
 
 function App() {
     return (<div className="App">
