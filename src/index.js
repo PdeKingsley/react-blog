@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-    createBrowserRouter,
+    createBrowserRouter, createHashRouter,
     RouterProvider,
 } from "react-router-dom";
 import './index.css';
@@ -12,6 +12,7 @@ import Timeline from "./views/timeline";
 import Blog from "./views/blog";
 import Category from "./views/category";
 import Tag from "./views/tag";
+import {PUBLIC_URL} from "./data/global";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -52,7 +53,7 @@ const router = createBrowserRouter([
         path: "Contact/Github",
         loader: () => {window.location.replace("https://github.com/PdeKingsley");return "https://github.com/PdeKingsley";},
     },
-],{basename: process.env.PUBLIC_URL,})
+],{basename: PUBLIC_URL})
 
 root.render(
   <React.StrictMode>

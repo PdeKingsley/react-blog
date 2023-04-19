@@ -10,7 +10,7 @@
     border-right: none;
 }
 
-h3{
+.numItem-wrapper h3{
     text-align: center;
     font-weight: 500;
     line-height: 1.25;
@@ -19,7 +19,7 @@ h3{
     color: var(--text-color);
 }
 
-h6{
+.numItem-wrapper h6{
     text-align: center;
     font-weight: 500;
     line-height: 1.25;
