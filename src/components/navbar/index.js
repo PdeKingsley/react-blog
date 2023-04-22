@@ -2,13 +2,13 @@ import React, {useState} from "react";
 import Logo from "../logo";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
-    faFolder,
     faHome,
     faMessage,
     faSearch,
     faTableCellsLarge,
     faTag,
-    faTimeline
+    faTimeline,
+    faToolbox,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "../link";
 import "./index.css"
@@ -47,7 +47,7 @@ function Navbar(){
                     <Link icon={faTableCellsLarge} title="Category" isDictionary="true"/>
                     <Link icon={faTag} title="Tag"/>
                     <Link icon={faTimeline} title="Timeline"/>
-                    <Link icon={faFolder} title="Docs" isDictionary="true"/>
+                    <Link icon={faToolbox} title="Toolbox" isDictionary="true"/>
                     <Link icon={faMessage} title="Contact" isDictionary="true"/>
                 </nav>
             </div>
