@@ -20,7 +20,7 @@ function BlogPage({blogObj}){
                             </i>
                             <i className="iconfont">
                                 <FontAwesomeIcon icon={ faTag } />
-                                {blogObj.tags}
+                                {blogObj.tags.map((tag) => String.fromCodePoint('0x1F60F') + tag + '   ')}
                             </i>
                         </div>
                     </div>
