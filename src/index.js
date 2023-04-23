@@ -13,6 +13,8 @@ import Blog from "./views/blog";
 import Category from "./views/category";
 import Tag from "./views/tag";
 import {PUBLIC_URL} from "./data/global";
+import Toolbox from "./views/toolbox";
+import Index from "./tools/index";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -48,6 +50,17 @@ const router = createBrowserRouter([
     {
         path: "blogs/:title",
         element: <Blog />,
+    },
+    {
+        path: "/Toolbox",
+        element: <Toolbox />,
+        children: [
+            {index:true,element: <Index />},
+            {
+                path: "b",
+                element: <Timeline />
+            }
+        ]
     },
     {
         path: "Contact/Github",

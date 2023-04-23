@@ -1,0 +1,19 @@
+.toolbox-sidebar-wrapper{
+    font-feature-settings: normal;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-variation-settings: normal;
+    tab-size: 4;
+    line-height: inherit;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    border: 0 solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
+    background-color:  rgb(18,18,18,1);
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    top: 4rem;
+    width: 18rem;
+    overflow: auto;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    display: block;
+}

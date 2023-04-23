@@ -1,0 +1,10 @@
+.collapse-ul{
+    list-style: none;
+    color: #fff;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.collapse-block-ul{
+    list-style: none;
+}
