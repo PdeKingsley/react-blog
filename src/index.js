@@ -12,7 +12,6 @@ import Timeline from "./views/timeline";
 import Blog from "./views/blog";
 import Category from "./views/category";
 import Tag from "./views/tag";
-import {PUBLIC_URL} from "./data/global";
 import Toolbox from "./views/toolbox";
 import Index from "./tools/index";
 
