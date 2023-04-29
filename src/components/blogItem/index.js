@@ -5,12 +5,12 @@ import "./index.css"
 import {PUBLIC_URL} from "../../data/global";
 
 function BlogItem({title,date,tags}){
-    let prefix = PUBLIC_URL + "/tag/"
+    let prefix = "/tag/"
     let tagItems = Array.from(tags).map(tag =>
             <span className="tag-item"><a href={prefix + tag}>{tag}</a></span>
         );
 
-    let url = PUBLIC_URL + "/blogs/" + title;
+    let url = "/blogs/" + title;
     return (
         <div className="abstract-item">
             <div className="title">

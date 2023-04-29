@@ -13,7 +13,6 @@ import {
 import Link from "../link";
 import "./index.css"
 import {blogListProfiles} from "../../data/data";
-import {PUBLIC_URL} from "../../data/global";
 
 function Navbar(){
     const [searchInput,setSearchInput] = useState("");
@@ -39,7 +38,7 @@ function Navbar(){
                     <FontAwesomeIcon icon={faSearch} className="search-icon"/>
                     <input aria-label="Search" list="search-advises" autoComplete="off" spellCheck="false" onChange={(e) => searchItems(e.target.value)} className=""/>
                     <datalist id="search-advises" className="search-advises">
-                        {filteredResults.map((item) => <span><a href={PUBLIC_URL + "/blogs/" + item.title}>{item.title}</a></span>)}
+                        {filteredResults.map((item) => <span><a href={"/blogs/" + item.title}>{item.title}</a></span>)}
                     </datalist>
                 </div>
                 <nav className="nav-link">

@@ -3,7 +3,7 @@ import "./index.css"
 import {PUBLIC_URL} from "../../data/global";
 
 function CategoryLi({name,num}){
-    let url =  PUBLIC_URL + "/category/" + name;
+    let url = "/category/" + name;
     return (
         <li className="categories-item">
             <a href={url}>

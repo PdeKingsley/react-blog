@@ -3,7 +3,7 @@ import "./index.css";
 import {PUBLIC_URL} from "../../data/global";
 
 function BlockTimelineItem({date,title}){
-    let url =  PUBLIC_URL + "/blogs/" + title;
+    let url = "/blogs/" + title;
     return (
         <div className="block-timeline-item">
             <a href={url}>
@@ -11,7 +11,7 @@ function BlockTimelineItem({date,title}){
                 <span className="timeline-title">{title}</span>
             </a>
         </div>
-    );
+    )
 }
 
 export default BlockTimelineItem;

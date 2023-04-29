@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import ToolboxLogo from "../../assets/images/g229.png"
+import ToolboxLogo from "../../assets/images/toolbox.png"
 import {Link} from "react-router-dom";
 
 function ToolboxTopBar(){

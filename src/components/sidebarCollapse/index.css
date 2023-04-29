@@ -7,4 +7,9 @@
 
 .collapse-block-ul{
     list-style: none;
+    position: relative;
+}
+
+.collapse-block-ul li {
+
 }

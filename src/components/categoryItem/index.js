@@ -3,7 +3,7 @@ import "./index.css"
 import {PUBLIC_URL} from "../../data/global";
 
 function CategoryItem({categoryName,postNum}){
-    let url = PUBLIC_URL + "/category/" + categoryName;
+    let url = "/category/" + categoryName;
 
     return (
         <li key={categoryName} className="category-item">
