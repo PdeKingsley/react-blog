@@ -84,7 +84,7 @@ function App() {
               <i className="footer-theme">
                   <FontAwesomeIcon icon={faUsers}/>
               </i>
-              <a target="blank" href="https://react.dev/">React.dev</a>
+              <a target="_blank" href="https://react.dev/">React.dev</a>
           </span>
             <span className="copyright">
                 <i className="copyright-icon">

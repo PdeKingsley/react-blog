@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "../../assets/images/logo.png"
 import './index.css'
-import {PUBLIC_URL} from "../../data/global";
+import {Link} from "react-router-dom";
 
 function Logo({link = "/"}){
     return (
-        <a href={link}><img src={logo} alt="pdeKingSley's blog" className="App-logo"/></a>
+        <Link to={link}><img src={logo} alt="pdeKingSley's blog" className="App-logo"/></Link>
     );
 }
 

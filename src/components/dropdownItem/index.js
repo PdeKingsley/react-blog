@@ -1,12 +1,12 @@
 import React from "react";
 import "./index.css"
-import {PUBLIC_URL} from "../../data/global";
+import {Link} from "react-router-dom";
 
 function DropdownItem({category,item}){
     let url = "/" + category + "/" + item;
     return (
         <li className="dropdown-item">
-            <a href={url} className="dropdown-item-link">{item}</a>
+            <Link to={url} className="dropdown-item-link">{item}</Link>
         </li>
     );
 }

@@ -1,15 +1,15 @@
 import React from "react";
 import "./index.css"
-import {PUBLIC_URL} from "../../data/global";
+import {Link} from "react-router-dom";
 
 function CategoryLi({name,num}){
     let url = "/category/" + name;
     return (
         <li className="categories-item">
-            <a href={url}>
+            <Link to={url}>
                 <span className="category-name">{name}</span>
                 <span className="category-li-post-num">{num}</span>
-            </a>
+            </Link>
         </li>
     );
 }
