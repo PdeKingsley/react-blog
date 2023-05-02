@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 function BlogItem({title,date,tags}){
     let prefix = "/tag/"
     let tagItems = Array.from(tags).map(tag =>
-            <span className="tag-item"><a href={prefix + tag}>{tag}</a></span>
+            <span className="tag-item"><Link to={prefix + tag}>{tag}</Link></span>
         );
 
     let url = "/blogs/" + title;
