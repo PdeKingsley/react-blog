@@ -14,6 +14,9 @@ import Category from "./views/category";
 import Tag from "./views/tag";
 import Toolbox from "./views/toolbox";
 import Index from "./tools/index";
+import B from "./tools/b";
+import {Canvas} from "@react-three/fiber";
+import Entozh from "./tools/entozh";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -57,8 +60,18 @@ const router = createBrowserRouter([
             {index:true,element: <Index />},
             {
                 path: "b",
-                element: <Timeline />
-            }
+                element:
+                    <Canvas>
+                        <ambientLight />
+                        <pointLight position={[10, 10, 10]} />
+                        <B position={[-1.2, 0, 0]} />
+                        <B position={[1.2, 0, 0]} />
+                    </Canvas>,
+            },
+            {
+                path: "text/enToZh",
+                element: <Entozh />,
+            },
         ]
     },
     {

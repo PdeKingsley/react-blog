@@ -1,11 +1,11 @@
 import React from "react";
-import "./index.css";
+//import "./index.css";
 import {Link} from "react-router-dom";
 import {toolCategory,toolMap} from "../../data/toolbox";
 
 function SidebarCollapse(){
     return (
-        <ul className="collapse-ul">
+        <ul className="">
             {toolCategory.map(category => {
                 return <li><CollapseBlock category={category} /></li>
             })}
@@ -19,10 +19,10 @@ function CollapseBlock({category}){
     return (
         <React.Fragment>
             <h3>{category}</h3>
-            <ul className="collapse-block-ul">
+            <ul className="">
                 {
                     block.map(obj => {
-                        return <li><CollapseItem toolName={obj.toolName} url={obj.url}/></li>
+                        return <li className=""><CollapseItem toolName={obj.toolName} url={obj.url}/></li>
                     })
                 }
             </ul>
