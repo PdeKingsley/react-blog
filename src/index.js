@@ -69,7 +69,7 @@ const router = createBrowserRouter([
                     </Canvas>,
             },
             {
-                path: "text/enToZh",
+                path: "enToZh",
                 element: <Entozh />,
             },
         ]

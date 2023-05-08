@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./index.css";
 import {useForm} from "react-hook-form";
 import useSWR from "swr";
+import {Card, CardContent, Typography} from "@material-ui/core";
 
 function EnToZh(){
     const [word,setWord] = useState("");
@@ -17,7 +18,16 @@ function EnToZh(){
                 <input {...register("word", { required: true })} className="word-input"/>
                 <input type="submit" className="word-submit"/>
             </form>
-            <span className="translation">{data?.translation}</span>
+            {
+                data &&
+                <Card variant="outlined" style={{position: "absolute",bottom: "33%"}}>
+                    <CardContent>
+                        <Typography variant="body2" color="text.secondary">
+                            {data.translation}
+                        </Typography>
+                    </CardContent>
+                </Card>
+            }
         </div>
     );
 }
