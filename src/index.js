@@ -17,6 +17,7 @@ import Index from "./tools/index";
 import B from "./tools/b";
 import {Canvas} from "@react-three/fiber";
 import Entozh from "./tools/entozh";
+import Chart from "./tools/chart/Chart";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
             {
                 path: "enToZh",
                 element: <Entozh />,
+            },
+            {
+                path: "chart",
+                element: <Chart />
             },
         ]
     },
