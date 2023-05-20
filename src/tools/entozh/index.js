@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./index.css";
 import {useForm} from "react-hook-form";
 import useSWR from "swr";
-import {Card, CardContent, Typography} from "@material-ui/core";
+import {Card, CardContent, Typography} from "@mui/material";
 
 function EnToZh(){
     const [word,setWord] = useState("");

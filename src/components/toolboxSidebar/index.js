@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./index.css";
-import {Box, List, ListItem, ListItemIcon, ListItemText, Tab, Tabs, Typography} from "@material-ui/core";
+import {Box, List, ListItem, ListItemIcon, ListItemText, Tab, Tabs, Typography} from "@mui/material";
 import {toolCategory,toolMap} from "../../data/toolbox";
 import {Link} from "react-router-dom";
 
