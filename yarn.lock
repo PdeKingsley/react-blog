@@ -4271,6 +4271,11 @@
     "d3-selection" "2 - 3"
     "d3-transition" "2 - 3"
 
+"d3@^3.5.0":
+  "integrity" "sha512-yFk/2idb8OHPKkbAL8QaOaqENNoMhIaSHZerk3oQsECwkObkCpJyjYwCe+OHiq6UEdhe1m8ZGARRRO3ljFjlKg=="
+  "resolved" "https://registry.npmjs.org/d3/-/d3-3.5.17.tgz"
+  "version" "3.5.17"
+
 "d3@^7.8.4":
   "integrity" "sha512-q2WHStdhiBtD8DMmhDPyJmXUxr6VWRngKyiJ5EfXMxPw+tqT6BhNjhJZ4w3BHsNm3QoVfZLY8Orq/qPFczwKRA=="
   "resolved" "https://registry.npmjs.org/d3/-/d3-7.8.4.tgz"
@@ -8987,6 +8992,14 @@
     "regenerator-runtime" "^0.13.9"
     "whatwg-fetch" "^3.6.2"
 
+"react-d3@^0.4.0":
+  "integrity" "sha512-/hCVrMlyAK12HGNFzVWujF5EYlvmW82azu7dh+Tr/pWYivgFk7JZisY2+cOWtS/J/pjToIgnHWFXZniKgNQ2qg=="
+  "resolved" "https://registry.npmjs.org/react-d3/-/react-d3-0.4.0.tgz"
+  "version" "0.4.0"
+  dependencies:
+    "d3" "^3.5.0"
+    "react" ">0.12.0"
+
 "react-dev-utils@^12.0.1":
   "integrity" "sha512-84Ivxmr17KjUupyqzFode6xKhjwuEJDROWKJy/BthkL7Wn6NJ8h4WE6k/exAv6ImS+0oZLRRW5j/aINMHyeGeQ=="
   "resolved" "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-12.0.1.tgz"
@@ -9105,7 +9118,7 @@
   dependencies:
     "debounce" "^1.2.1"
 
-"react@^16.11.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17 || ^18", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>=16.13", "react@>=16.3", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0", "react@>=17.0", "react@>=18.0":
+"react@^16.11.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17 || ^18", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>=16.13", "react@>=16.3", "react@>=16.6.0", "react@>=16.8", "react@>=16.8.0", "react@>=17.0", "react@>=18.0", "react@>0.12.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"

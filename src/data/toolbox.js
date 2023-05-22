@@ -1,2 +1,2 @@
 export const toolCategory = ["视频","图像","文字","数据解析"];
-export const toolMap = {"视频":[{toolName:"b",url:"b"},{toolName:"a",url:"b"},{toolName:"chart",url:"chart"}],"图像":[],"文字":[{toolName:"英译中",url:"enToZh"}],"数据解析":[]};
+export const toolMap = {"视频":[{toolName:"b",url:"b"},{toolName:"chart",url:"chart"},{toolName:"bonusChart",url:"bonusChart"}],"图像":[],"文字":[{toolName:"英译中",url:"enToZh"}],"数据解析":[]};

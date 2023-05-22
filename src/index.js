@@ -17,7 +17,8 @@ import Index from "./tools/index";
 import B from "./tools/b";
 import {Canvas} from "@react-three/fiber";
 import Entozh from "./tools/entozh";
-import Chart from "./tools/chart/Chart";
+import {ChinaPopulationMap} from "./tools/chart/Map";
+import BonusChart from "./tools/chart/BonusChart";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -75,8 +76,12 @@ const router = createBrowserRouter([
             },
             {
                 path: "chart",
-                element: <Chart />
+                element: <ChinaPopulationMap />
             },
+            {
+                path: "bonusChart",
+                element: <BonusChart />
+            }
         ]
     },
     {

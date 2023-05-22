@@ -93,6 +93,7 @@ function App() {
                   <FontAwesomeIcon icon={faCopyright}/>
                 </i>
                 <span>From 2022</span>
+          <span className="record">苏ICP备2023015917号</span>
             </span>
                     <span className="cap"></span>
                 </footer>
