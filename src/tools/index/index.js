@@ -40,7 +40,6 @@ function Index(props){
             if(y > cvs.height && Math.random() > 0.99){
                 charIndex.current[i] = 0;
             }else{
-                console.log(i)
                 charIndex.current[i] ++;
             }
         }
