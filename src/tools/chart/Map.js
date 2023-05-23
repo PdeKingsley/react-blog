@@ -41,6 +41,7 @@ function Map({data, fillMode}){
                 .attr('text-anchor',"middle")
                 .style('font-size','8px')
                 .style('color','#6E6E6E')
+
         },
         [data]
     );
